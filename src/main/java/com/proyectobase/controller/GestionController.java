@@ -31,4 +31,9 @@ public class GestionController {
     public List<PersonEntity> findAll() {
         return personService.findAll();
     }
+
+    @GetMapping("/texto")
+    public String texto() {
+        return "respuesta en texto string";
+    }
 } 
